@@ -27,7 +27,6 @@ public class ReadThread implements Runnable{
                 String message = new String(buffer,
                         0, datagramPacket.getLength(),
                         UTF_8);
-                System.out.println(message);
                 if (!message.startsWith(GroupChat.name)) {
                     System.out.println(message);
                 }
